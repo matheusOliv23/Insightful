@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,8 +8,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Inter, Roboto, sans-serif;
 }
 
 a {
@@ -19,22 +20,25 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
+body {
     color: white;
-    background: linear-gradient(45deg, #32a6ff 0%, #3f6fff 49%, #8d54ff 82%);
+    background: linear-gradient(45deg, #32a6ff 0%, #3f6fff 49%, #8d54ff 82%); 
     background-size: 200%;
     animation: aurora 10s infinite;
-  }
+    background-repeat: no-repeat; 
+    height: 100vh
 }
 
-.aurora-inner {
+
+.aurora-inner {   
     background: radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
     background-size: 200%;
     animation: aurora 7s infinite;
+    background-repeat: no-repeat;    
+}
+
+.btn-inner{
+  background: -webkit-linear-gradient(right, #00dbde,#fc00ff,#00dbde,#fc00ff); 
 }
 
 @keyframes aurora {
